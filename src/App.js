@@ -13,7 +13,7 @@ class App extends Component {
           </p>
           <a
             className="App-link"
-            href="https://reactjs.org"
+            href="../public/Ostle.ico"
             target="_blank"
             rel="noopener noreferrer"
           >
