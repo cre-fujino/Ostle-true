@@ -4,9 +4,8 @@ import './App.css';
 import  { BrowserRouter, Route, Link } from 'react-router-dom'
 
 
-class App extends Component {
-  render() {
-    return (
+const Top = () => (
+  <BrowserRouter>
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
@@ -17,16 +16,16 @@ class App extends Component {
           <a
             className="App-link"
             href="../Game.js"
-            target="_blank"
+            target="_self"
             rel="noopener noreferrer"
           >
             Game Start
           </a>
 
-        </header>
-      </div>
-    );
-  }
-}
+       </header>
+     </div>
+  </BrowserRouter>
+)
 
-export default App;
+
+export default Top;
