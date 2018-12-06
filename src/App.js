@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import logo from './Ostle.png'
+import './App.css';
 import  { BrowserRouter, Route, Link } from 'react-router-dom'
 
 
