@@ -14,15 +14,9 @@ const Top = () => (
             オス、オトス、トル。
           </p>
 
-          <Route path = '/game' Component = {Game} />
-          <a
-            className="App-link"
-            href="../Game.js"
-            target="_self"
-            rel="noopener noreferrer"
-          >
-            Game Start
-          </a>
+           <Link to = '/game'>Game Start</Link>
+
+         <Route path = '/game' Component = {Game} />
 
        </header>
      </div>
@@ -30,6 +24,26 @@ const Top = () => (
 )
 
 const Game = () =>(
+
+function Square(props) {
+  return (
+    <buttun className= "square" onClick={props.onclick}>
+      {props.value}
+    </buttun>
+　)
+}
+
+class Board extends React.Component {
+  renderSquare(i) {
+    return (
+      <Square
+        value={this.props.squares[i]}
+        onClick={() => this.props.onClick(i)}
+      />
+    )
+  }
+  render() {
+    return (
   <div className="Game-board">
     <div className="board-row">
         {this.renderSquare(0)}
@@ -67,6 +81,9 @@ const Game = () =>(
         {this.renderSquare(24)}
     </div>
   </div>
+  )
+  }
+}
 )
 
 
