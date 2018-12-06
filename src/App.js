@@ -16,7 +16,7 @@ class App extends Component {
           </p>
           <a
             className="App-link"
-            href="../public/Ostle.ico"
+            href="../Game.js"
             target="_blank"
             rel="noopener noreferrer"
           >
