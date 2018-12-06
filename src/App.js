@@ -1,6 +1,7 @@
-import React, { Component } from 'react';
-import logo from './Ostle.png';
-import './App.css';
+import React, { Component } from 'react'
+import logo from './Ostle.png'
+import  { BrowserRouter, Route, Link } from 'react-router-dom'
+
 
 class App extends Component {
   render() {
