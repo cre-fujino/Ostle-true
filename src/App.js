@@ -23,16 +23,15 @@ const Top = () => (
   </BrowserRouter>
 )
 
-const Game = () =>(
-
 function Square(props) {
   return (
     <buttun className= "square" onClick={props.onclick}>
       {props.value}
     </buttun>
-　)
+  )
 }
 
+const Game = () =>(
 class Board extends React.Component {
   renderSquare(i) {
     return (
