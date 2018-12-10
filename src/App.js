@@ -15,8 +15,7 @@ const App = () => (
           </p>
 
            <Link to = '/game'>Game Start</Link>
-
-         <Route path = '/game' Component = {Game} />
+           <Route path = '/game' render={ () => <Game mode = {'Ostle'}/>}/>
 
        </header>
      </div>
