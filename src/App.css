@@ -1,12 +1,5 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 50vmin;
-}
-
-.App-header {
   background-color: #FFFFFF;
   min-height: 20vh;
   display: flex;
@@ -15,6 +8,10 @@
   justify-content: center;
   font-size: calc(20px + 2vmin);
   color: black;
+}
+
+.App-logo {
+  height: 50vmin;
 }
 
 .App-link {
