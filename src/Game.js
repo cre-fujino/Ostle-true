@@ -4,8 +4,9 @@ import './Game.css'
 import  { BrowserRouter, Route, Link } from 'react-router-dom'
 
 
+
 function Square(props) {
-  return (
+    return (
     <buttun className= "square" onClick={props.onclick}>
       {props.value}
     </buttun>
@@ -23,12 +24,11 @@ class Board extends React.Component {
         onClick={() => this.props.onClick(i)}
       />
     )
-  }
-
-<BrowserRouter>
+}
 
   render() {
     return (
+        <BrowserRouter>
         <div>
         <div className="board-row">
           {this.renderSquare(0)}
@@ -66,9 +66,12 @@ class Board extends React.Component {
           {this.renderSquare(24)}
         </div>
       </div>
-    )
+   </BrowserRouter>
+   )
   }
 }
-</BrouserRouter>
 
-export default Game;
+
+
+
+export default App;
