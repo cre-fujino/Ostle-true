@@ -63,11 +63,11 @@ class Board extends React.Component {
           </div>
     )
   }
-
+}
 class Game extends React.Component {
   render() {
     return (
-      <div className="game">
+      <div className="Game">
         <div className="game-board">
           <Board />
         </div>
