@@ -16,7 +16,7 @@ function Square(props) {
 
 
 
-class Board extends React.Component {
+class Game extends React.Component {
   renderSquare(i) {
     return (
       <Square
@@ -28,9 +28,10 @@ class Board extends React.Component {
 
   render() {
     return (
-        <BrowserRouter>
+        //<BrowserRouter>
         <div>
-        <div className="board-row">
+          aaa
+        {/* <div className="board-row">
           {this.renderSquare(0)}
           {this.renderSquare(1)}
           {this.renderSquare(2)}
@@ -64,9 +65,9 @@ class Board extends React.Component {
           {this.renderSquare(22)}
           {this.renderSquare(23)}
           {this.renderSquare(24)}
-        </div>
+        </div> */}
       </div>
-   </BrowserRouter>
+   //</BrowserRouter>
    )
   }
 }
@@ -74,4 +75,4 @@ class Board extends React.Component {
 
 
 
-export default App;
+export default Game;
