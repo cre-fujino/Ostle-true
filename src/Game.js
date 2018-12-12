@@ -3,8 +3,6 @@ import App from './App.js'
 import './Game.css'
 import  { BrowserRouter, Route, Link } from 'react-router-dom'
 
-
-
 function Square(props) {
     return (
     <buttun className= "square" onClick={props.onclick}>
@@ -13,25 +11,21 @@ function Square(props) {
   )
 }
 
-
-
-
 class Game extends React.Component {
   renderSquare(i) {
     return (
-      <Square
-        value={this.props.squares[i]}
+      <Square value={this.props.squares[i]}
         onClick={() => this.props.onClick(i)}
       />
     )
-}
+  }
 
   render() {
     return (
-        //<BrowserRouter>
+        <BrowserRouter>
         <div>
-          aaa
-        {/* <div className="board-row">
+
+        <div className="board-row">
           {this.renderSquare(0)}
           {this.renderSquare(1)}
           {this.renderSquare(2)}
@@ -67,7 +61,7 @@ class Game extends React.Component {
           {this.renderSquare(24)}
         </div> */}
       </div>
-   //</BrowserRouter>
+   </BrowserRouter>
    )
   }
 }

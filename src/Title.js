@@ -8,21 +8,14 @@ class Title extends React.Component {
   render () {
     return(
       <div className="App">
-          <img src={logo} className="App-logo" alt="logo" />
-
+        <img src={logo} className="App-logo" alt="logo" />
           <p>
             オス、オトス、トル。
           </p>
-
-           <Link to = '/game'>Game Start</Link>
-     </div>
+        <Link to = '/game'>Game Start</Link>
+      </div>
     )
   }
-
 }
-
-
-
-
 
 export default Title;
