@@ -15,16 +15,14 @@ class Square extends React.Component {
 
 class Board extends React.Component {
 
- var status = 'Next player: X'
   renderSquare(i) {
-
-    cosnt status = 'Next player: X'
     renderSquare(i) {
     return <Square value= {i} />
     }
+  }
 
   render() {
-
+    const status = 'Next player: X'
     return (
         <div>
           <div className="status">{status}</div>
