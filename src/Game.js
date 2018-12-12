@@ -16,10 +16,9 @@ class Square extends React.Component {
 class Board extends React.Component {
 
   renderSquare(i) {
-    renderSquare(i) {
     return <Square value= {i} />
     }
-  }
+
 
   render() {
     const status = 'Next player: X'
@@ -62,7 +61,6 @@ class Board extends React.Component {
               {this.renderSquare(24)}
             </div>
           </div>
-        </div>
     )
   }
 
