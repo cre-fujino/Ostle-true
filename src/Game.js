@@ -22,20 +22,10 @@ class Board extends React.Component {
 
   render() {
     const status = 'Next player: X'
-    const MyFrame = '■'
-    const EnemyFrame = '□'
-    const Hole = '◎'
     return (
         <div>
           <div className="status">{status}</div>
             <div className="board-row">
-              {this.renderSquare(EnemyFrame)}
-              {this.renderSquare(EnemyFrame)}
-              {this.renderSquare(EnemyFrame)}
-              {this.renderSquare(EnemyFrame)}
-              {this.renderSquare(EnemyFrame)}
-            </div>
-            <div className="board-row">
               {this.renderSquare( )}
               {this.renderSquare( )}
               {this.renderSquare( )}
@@ -45,7 +35,14 @@ class Board extends React.Component {
             <div className="board-row">
               {this.renderSquare( )}
               {this.renderSquare( )}
-              {this.renderSquare(Hole)}
+              {this.renderSquare( )}
+              {this.renderSquare( )}
+              {this.renderSquare( )}
+            </div>
+            <div className="board-row">
+              {this.renderSquare( )}
+              {this.renderSquare( )}
+              {this.renderSquare( )}
               {this.renderSquare( )}
               {this.renderSquare( )}
             </div>
@@ -81,13 +78,22 @@ class Game extends React.Component {
       </div>
     );
   }
-
-
-
-
-
-
 }
+
+class MyFrame extends React.Component {
+  render() {
+    return (
+      <div className="MyFrame">
+        {"■"}
+      </div>
+    )
+  }
+}
+
+
+
+
+
 
 
 
